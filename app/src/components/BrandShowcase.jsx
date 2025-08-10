@@ -7,7 +7,6 @@ export default function BrandsShowcase() {
   const brands = [
     {
       name: "Malazgirt Tiles & Renovations",
-      phone: "(437) 230-7940",
       instagram: "https://www.instagram.com/malazgirt_tile/", // Replace with actual link
       videos: [
         "/videos/Tile-1.mp4", // Replace with embed URLs
@@ -16,7 +15,6 @@ export default function BrandsShowcase() {
     },
     {
       name: "Lamro Construction",
-      phone: "(604) 300-2245",
       instagram: "https://www.instagram.com/lamroconstruction.ltd/", // Replace with actual link
       videos: [
         "/videos/Lamro-1.mp4",
@@ -37,7 +35,7 @@ export default function BrandsShowcase() {
           className="text-center mb-14"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-            Our Partner Brands
+            Our Work
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             Trusted by top renovation experts — explore their work and get in
@@ -63,12 +61,6 @@ export default function BrandsShowcase() {
 
               {/* Contact */}
               <div className="flex flex-wrap items-center gap-4 mb-6">
-                <a
-                  href={`tel:${brand.phone.replace(/\s/g, "")}`}
-                  className="flex items-center gap-2 text-primary hover:underline"
-                >
-                  <Phone className="w-5 h-5" /> {brand.phone}
-                </a>
                 <a
                   href={brand.instagram}
                   target="_blank"

@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import HowItWorks from "@/components/HowItWorks";
 import Guarantee from "@/components/Guarantee";
-import LeadCaptureForm from "@/components/LeadForm";
+// import LeadCaptureForm from "@/components/LeadForm";
 import Testimonials from "@/components/ProofTestimonials";
 import FAQSection from "@/components/FAQ";
 import CallToAction from "@/components/CallToAction";
@@ -17,9 +17,9 @@ const page = () => {
       <About />
       <HowItWorks />
       <Guarantee />
-      <LeadCaptureForm />
+      {/* <LeadCaptureForm /> */}
       <BrandsShowcase/>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQSection />
       <CallToAction/>
       <Footer/>
