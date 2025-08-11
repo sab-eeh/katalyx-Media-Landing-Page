@@ -17,7 +17,7 @@ export default function About() {
             className="text-center max-w-3xl mx-auto"
           >
             <img
-              src="/Images/laksh.jpg" // <-- Replace with actual image path
+              src="/Images/Laksh.jpg"
               alt="Laksh Puri"
               className="w-32 h-32 mx-auto mb-4 rounded-full object-cover shadow-lg"
             />

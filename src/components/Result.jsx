@@ -3,17 +3,17 @@ import React from "react";
 
 const resultsData = [
   {
-    img: "/images/result-1.jpg",
+    img: "/Images/result-1.jpg",
     alt: "21 leads in 4 weeks",
     caption: "21 Leads in 4 Weeks",
   },
   {
-    img: "/images/result-2.jpg",
+    img: "/Images/result-2.jpg",
     alt: "26 Leads in 4 Weeks",
     caption: "26 Leads in 4 Weeks",
   },
   {
-    img: "/images/result-3.jpg",
+    img: "/Images/result-3.jpg",
     alt: "24 Leads in 4 Weeks",
     caption: "24 Leads in 4 Weeks",
   },
