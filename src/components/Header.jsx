@@ -143,14 +143,14 @@ export default function HeaderHero() {
                     <FaLinkedinIn />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <button
                     onClick={() => scrollToSection("book-now")}
                     className="bg-primary text-white px-5 py-2 rounded-full font-semibold hover:opacity-90 transition-all shadow-md"
                   >
                     Book Now
                   </button>
-                </li>
+                </li> */}
               </ul>
             </div>
           </motion.div>
