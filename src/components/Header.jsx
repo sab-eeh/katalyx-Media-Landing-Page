@@ -66,16 +66,36 @@ export default function HeaderHero() {
             Book Now
           </button> */}
           <div className="flex space-x-4 text-lg text-gray-600">
-            <a href="#" aria-label="Instagram" className="hover:text-primary">
+            <a
+              href="https://www.instagram.com/katalyx.media/"
+              target="_blank"
+              aria-label="Instagram"
+              className="hover:text-primary"
+            >
               <FaInstagram />
             </a>
-            <a href="#" aria-label="Facebook" className="hover:text-primary">
+            <a
+              href="https://www.facebook.com/profile.php?id=61563899468930"
+              target="_blank"
+              aria-label="Facebook"
+              className="hover:text-primary"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" aria-label="TikTok" className="hover:text-primary">
+            <a
+              href="https://www.tiktok.com/@smma_lakshpuri"
+              target="_blank"
+              aria-label="TikTok"
+              className="hover:text-primary"
+            >
               <FaTiktok />
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-primary">
+            <a
+              href="https://www.linkedin.com/in/laksh-puri-655a53287/"
+              target="_blank"
+              aria-label="LinkedIn"
+              className="hover:text-primary"
+            >
               <FaLinkedinIn />
             </a>
           </div>
@@ -115,28 +135,32 @@ export default function HeaderHero() {
                 ))}
                 <li className="flex justify-center space-x-6 text-lg py-2 text-gray-600">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/katalyx.media/"
+                    target="_blank"
                     aria-label="Instagram"
                     className="hover:text-primary"
                   >
                     <FaInstagram />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61563899468930"
+                    target="_blank"
                     aria-label="Facebook"
                     className="hover:text-primary"
                   >
                     <FaFacebookF />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@smma_lakshpuri"
+                    target="_blank"
                     aria-label="TikTok"
                     className="hover:text-primary"
                   >
                     <FaTiktok />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/laksh-puri-655a53287/"
+                    target="_blank"
                     aria-label="LinkedIn"
                     className="hover:text-primary"
                   >

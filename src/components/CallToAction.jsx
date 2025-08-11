@@ -27,7 +27,7 @@ export default function CallToAction() {
         className="absolute -bottom-20 -right-20 w-72 h-72 rounded-full bg-blue-500 blur-3xl"
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6">
+      <div className="relative max-w-4xl mx-auto px-6">
         <motion.h2
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

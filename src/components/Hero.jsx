@@ -51,7 +51,7 @@ export default function Hero() {
             </p>
 
             {/* Trust Badges */}
-            <motion.div
+            {/* <motion.div
               className="flex flex-wrap gap-4 mt-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -66,7 +66,7 @@ export default function Hero() {
                   className="h-10 object-contain"
                 />
               ))}
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Right Booking Calendly Embed */}
