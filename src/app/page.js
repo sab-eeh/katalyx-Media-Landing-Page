@@ -9,6 +9,7 @@ import FAQSection from "@/components/FAQ";
 import CallToAction from "@/components/CallToAction";
 import BrandsShowcase from "@/components/BrandShowcase";
 import Footer from "@/components/Footer";
+import Results from "@/components/Result";
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
       <BrandsShowcase/>
       {/* <Testimonials /> */}
       <FAQSection />
+      <Results/>
       <CallToAction/>
       <Footer/>
     </div>
