@@ -9,16 +9,16 @@ export default function BrandsShowcase() {
       name: "Malazgirt Tiles & Renovations",
       instagram: "https://www.instagram.com/malazgirt_tile/",
       videos: [
-        { src: "/videos/Tile-1.mp4", poster: "/images/thumbnail.jpg" },
-        { src: "/videos/Tile-2.mp4", poster: "/images/thumbnail.jpg" },
+        { src: "/videos/Tile-1.mp4", poster: "/Images/thumbnail.jpg" },
+        { src: "/videos/Tile-2.mp4", poster: "/Images/thumbnail.jpg" },
       ],
     },
     {
       name: "Lamro Construction",
       instagram: "https://www.instagram.com/lamroconstruction.ltd/",
       videos: [
-        { src: "/videos/Lamro-1.mp4", poster: "/images/thumbnail.jpg" },
-        { src: "/videos/Lamro-2.mp4", poster: "/images/thumbnail.jpg" },
+        { src: "/videos/Lamro-1.mp4", poster: "/Images/thumbnail.jpg" },
+        { src: "/videos/Lamro-2.mp4", poster: "/Images/thumbnail.jpg" },
       ],
     },
   ];
