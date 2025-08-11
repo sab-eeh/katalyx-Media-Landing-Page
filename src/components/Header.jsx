@@ -2,6 +2,12 @@
 import React from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaTiktok,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 export default function HeaderHero() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -26,17 +32,17 @@ export default function HeaderHero() {
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <div
-          onClick={() => scrollToSection("hero")}
+          onClick={() => scrollToSection("/")}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => e.key === "Enter" && scrollToSection("hero")}
-          className="cursor-pointer"
+          onKeyDown={(e) => e.key === "Enter" && scrollToSection("/")}
+          className="cursor-pointer flex-shrink-0"
           aria-label="Go to top"
         >
           <img className="w-9 h-auto" src="/Images/Logo.jpg" alt="Logo" />
         </div>
 
-        {/* Desktop menu + CTA */}
+        {/* Centered Nav + Social Icons */}
         <div className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-8 font-medium cursor-pointer">
             {navLinks.map((link) => (
@@ -49,13 +55,30 @@ export default function HeaderHero() {
               </li>
             ))}
           </ul>
+        </div>
 
-          <button
+        {/* Book Now Button */}
+        <div className="hidden md:flex items-center space-x-8">
+          {/* <button
             onClick={() => scrollToSection("book-now")}
             className="bg-primary text-white px-5 py-2 rounded-full font-semibold hover:opacity-90 transition-all shadow-md"
           >
             Book Now
-          </button>
+          </button> */}
+          <div className="flex space-x-4 text-lg text-gray-600">
+            <a href="#" aria-label="Instagram" className="hover:text-primary">
+              <FaInstagram />
+            </a>
+            <a href="#" aria-label="Facebook" className="hover:text-primary">
+              <FaFacebookF />
+            </a>
+            <a href="#" aria-label="TikTok" className="hover:text-primary">
+              <FaTiktok />
+            </a>
+            <a href="#" aria-label="LinkedIn" className="hover:text-primary">
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
 
         {/* Mobile toggle */}
@@ -90,6 +113,36 @@ export default function HeaderHero() {
                     {link.label}
                   </li>
                 ))}
+                <li className="flex justify-center space-x-6 text-lg py-2 text-gray-600">
+                  <a
+                    href="#"
+                    aria-label="Instagram"
+                    className="hover:text-primary"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="Facebook"
+                    className="hover:text-primary"
+                  >
+                    <FaFacebookF />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="TikTok"
+                    className="hover:text-primary"
+                  >
+                    <FaTiktok />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="LinkedIn"
+                    className="hover:text-primary"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </li>
                 <li>
                   <button
                     onClick={() => scrollToSection("book-now")}
