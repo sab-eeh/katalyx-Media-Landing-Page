@@ -80,11 +80,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
             <div className="flex items-center gap-2 mb-2">
               <Phone className="w-5 h-5 text-gray-400" />
-              <span>(123) 456-7890</span>
+              <span>+1 (647) 627-3109</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-gray-400" />
-              <span>info@example.com</span>
+              <span>setterkatalyx@gmail.com</span>
             </div>
           </div>
         </div>

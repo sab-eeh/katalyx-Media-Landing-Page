@@ -5,19 +5,22 @@ import { motion } from "framer-motion";
 
 export default function Guarantee() {
   const qualifications = [
-    "Full name & phone",
-    "Project details",
-    "Timeline",
-    "Budget",
-    "Date & time booked for a consultation",
-    "Address in your service area",
-    "Homeowner/decision-maker",
-    "Our team has called them",
-    "Lead is exclusive to you",
+    "Full Name & Phone Number",
+    "Project Details",
+    "Project Starts In 90 Days Or Less",
+    "Maximum Budget",
+    "Date & Time Booked On Your Calender",
+    "Lead In Your Service Area",
+    "Booked Consultations With Decision Makers Only",
+    "Our Team Reschedules If Needed",
+    "Lead is 100% Exclusive",
   ];
 
   return (
-    <section id="guarantee" className="bg-gradient-to-b from-gray-50 to-white py-20">
+    <section
+      id="guarantee"
+      className="bg-gradient-to-b from-gray-50 to-white py-20"
+    >
       <div className="container mx-auto px-4 md:px-8">
         {/* Heading */}
         <motion.div
@@ -31,11 +34,19 @@ export default function Guarantee() {
             <ShieldCheck className="text-primary w-10 h-10" />
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Get <span className="text-primary">10 Qualified Quotation Appointments</span> in 30 Days — or You Don’t Pay.
+            Get{" "}
+            <span className="text-primary">
+              10 Qualified Quotation Appointments
+            </span>{" "}
+            in 30 Days — or You Don’t Pay.
           </h2>
           <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-            If we don’t deliver <strong>10 qualified, booked quotation appointments</strong> in 30 days,
-            you don’t pay a cent to us. <span className="text-primary font-medium">Zero risk. All reward.</span>
+            If we don’t deliver{" "}
+            <strong>10 qualified, booked quotation appointments</strong> in 30
+            days, you don’t pay a cent to us.{" "}
+            <span className="text-primary font-medium">
+              Zero risk. All reward.
+            </span>
           </p>
         </motion.div>
 
@@ -48,7 +59,7 @@ export default function Guarantee() {
           className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
         >
           <h3 className="text-2xl font-bold mb-8 text-gray-900 border-b pb-4">
-            “Qualified” means:
+            What Exactly A Qualified Booked Appointment Includes
           </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {qualifications.map((item, index) => (
