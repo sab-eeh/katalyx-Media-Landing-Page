@@ -53,6 +53,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://assets.calendly.com" crossOrigin />
+        <link rel="preconnect" href="https://calendly.com" crossOrigin />
+        <link rel="preconnect" href="https://www.youtube.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

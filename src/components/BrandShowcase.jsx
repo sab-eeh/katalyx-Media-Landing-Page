@@ -83,6 +83,8 @@ export default function BrandsShowcase() {
                       src={video.src}
                       poster={video.poster}
                       controls
+                      preload="none"
+                      loading="lazy"
                       className="rounded-xl border border-gray-200 shadow-sm w-full h-56 object-cover"
                     />
                   </div>
