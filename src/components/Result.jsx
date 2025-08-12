@@ -3,17 +3,17 @@ import React from "react";
 
 const resultsData = [
   {
-    img: "/Images/result-1.jpg",
+    img: "/Images/result-1.webp",
     alt: "21 leads in 4 weeks",
     caption: "11 Qualified BOOKED Appointments in 30 Days",
   },
   {
-    img: "/Images/result-2.jpg",
+    img: "/Images/result-2.webp",
     alt: "26 Leads in 4 Weeks",
     caption: "13 Qualified BOOKED Appointments in 30 Days",
   },
   {
-    img: "/Images/result-3.jpg",
+    img: "/Images/result-3.webp",
     alt: "24 Leads in 4 Weeks",
     caption: "15 Qualified BOOKED Appointments in 30 Days",
   },

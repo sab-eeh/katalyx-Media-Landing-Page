@@ -8,6 +8,7 @@ import {
   FaTiktok,
   FaLinkedinIn,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export default function HeaderHero() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -39,7 +40,14 @@ export default function HeaderHero() {
           className="cursor-pointer flex-shrink-0"
           aria-label="Go to top"
         >
-          <img className="w-9 h-auto" src="/Images/Logo.jpg" alt="Logo" />
+          <Image
+            src="/Images/Logo.webp"
+            alt="Katalyx Media Logo"
+            width={36}
+            height={36}
+            className="h-auto"
+            priority
+          />
         </div>
 
         {/* Centered Nav + Social Icons */}

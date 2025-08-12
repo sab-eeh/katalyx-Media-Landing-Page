@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function BrandsShowcase() {
   const brands = [
@@ -9,16 +10,16 @@ export default function BrandsShowcase() {
       name: "Malazgirt Tiles & Renovations",
       instagram: "https://www.instagram.com/malazgirt_tile/",
       videos: [
-        { src: "/videos/Tile-1.mp4", poster: "/Images/thumbnail-1.jpg" },
-        { src: "/videos/Tile-2.mp4", poster: "/Images/thumbnail-2.jpg" },
+        { src: "/videos/Tile-1.mp4", poster: "/Images/thumbnail-1.webp" },
+        { src: "/videos/Tile-2.mp4", poster: "/Images/thumbnail-2.webp" },
       ],
     },
     {
       name: "Lamro Construction",
       instagram: "https://www.instagram.com/lamroconstruction.ltd/",
       videos: [
-        { src: "/videos/Lamro-1.mp4", poster: "/Images/thumbnail-3.jpg" },
-        { src: "/videos/Lamro-2.mp4", poster: "/Images/thumbnail-4.jpg" },
+        { src: "/videos/Lamro-1.mp4", poster: "/Images/thumbnail-3.webp" },
+        { src: "/videos/Lamro-2.mp4", poster: "/Images/thumbnail-4.webp" },
       ],
     },
   ];
@@ -101,7 +102,6 @@ export default function BrandsShowcase() {
         >
           <div className="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg">
             <div className="relative w-full pb-[56.25%]">
-              {" "}
               {/* 16:9 Aspect Ratio */}
               <iframe
                 className="absolute top-0 left-0 w-full h-full"

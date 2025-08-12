@@ -29,7 +29,6 @@ export default function Footer() {
                 { label: "How it Works", id: "how-it-works" },
                 { label: "Guarantee", id: "guarantee" },
                 { label: "FAQ", id: "faq" },
-                { label: "Contact", id: "contac" },
 
               ].map((link, i) => (
                 <li key={i}>

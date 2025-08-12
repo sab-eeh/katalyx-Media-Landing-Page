@@ -1,14 +1,24 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div
       id="/"
       className="relative min-h-screen bg-fixed bg-center bg-cover py-5"
-      style={{ backgroundImage: "url('/kitchen2.jpg')" }}
+      style={{ backgroundImage: "url('/kitchen.webp')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60 z-0" />
@@ -16,7 +26,7 @@ export default function Hero() {
       {/* Main content */}
       <div className="relative z-10">
         <Header />
-        <section className="container mx-auto px-4 md:px-8 py-20 grid md:grid-cols-2 gap-10 items-center">
+        <section className="container mx-auto px-4 md:px-8 py-16 md:py-20 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             className="space-y-6"
@@ -44,29 +54,6 @@ export default function Hero() {
             >
               Start My 30-Day Guarantee
             </motion.a>
-
-            {/* Terms */}
-            <p className="text-sm text-gray-400 underline cursor-pointer">
-              See full guarantee terms
-            </p>
-
-            {/* Trust Badges */}
-            {/* <motion.div
-              className="flex flex-wrap gap-4 mt-6"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              {["trust1.png", "trust2.png", "trust3.png"].map((img, i) => (
-                <img
-                  key={i}
-                  src={`/images/${img}`}
-                  alt={`Trust Badge ${i + 1}`}
-                  className="h-10 object-contain"
-                />
-              ))}
-            </motion.div> */}
           </motion.div>
 
           {/* Right Booking Calendly Embed */}
@@ -79,20 +66,15 @@ export default function Hero() {
             viewport={{ once: true }}
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary/30 blur-3xl rounded-2xl opacity-20"></div>
-            <div className="relative z-10 bg-white rounded-2xl shadow-xl lg:my-8 p-4 md:p-6 ">
+            <div className="relative z-10 bg-white rounded-2xl shadow-xl lg:my-8 p-4 md:p-6">
               <h3 className="text-xl font-bold mb-4 text-center text-gray-800">
                 Book Your Free Consultation
               </h3>
-              <div className="w-full">
-                <iframe
-                  src="https://calendly.com/setterkatalyx?embed_domain=yourdomain.com&embed_type=Inline"
-                  width="100%"
-                  height="500"
-                  frameBorder="0"
-                  className="rounded-lg"
-                  style={{ minHeight: "400px" }}
-                ></iframe>
-              </div>
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/setterkatalyx?hide_event_type_details=1&primary_color=00b7c3"
+                style={{ minWidth: "320px", height: "500px" }}
+              ></div>
             </div>
           </motion.div>
         </section>
