@@ -18,7 +18,7 @@ export default function Hero() {
     <div
       id="/"
       className="relative min-h-screen bg-fixed bg-center bg-cover py-5"
-      style={{ backgroundImage: "url('/kitchen.webp')" }}
+      style={{ backgroundImage: "url('/Kitchen.webp')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60 z-0" />
