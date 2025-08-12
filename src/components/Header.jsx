@@ -29,7 +29,7 @@ export default function HeaderHero() {
   ];
 
   return (
-    <header className="bg-white w-[98%] md:w-[90%] mx-auto text-black shadow-lg py-4 px-6 md:px-10 rounded-full fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+    <header className="bg-white w-[95%] md:w-[90%] mx-auto text-black shadow-lg py-4 px-6 md:px-10 rounded-full fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <div

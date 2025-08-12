@@ -29,7 +29,7 @@ export default function Hero() {
         <section className="container mx-auto px-4 md:px-8 py-16 md:py-20 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Content */}
           <motion.div
-            className="space-y-6"
+            className="space-y-6 text-center lg:text-left py-6 lg:py-0"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
