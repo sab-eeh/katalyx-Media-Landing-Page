@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,15 +56,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://assets.calendly.com" crossOrigin />
-        <link rel="preconnect" href="https://calendly.com" crossOrigin />
-        <link rel="preconnect" href="https://www.youtube.com" crossOrigin />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://assets.calendly.com" crossOrigin="" />
+        <link rel="preconnect" href="https://calendly.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.youtube.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        {/* Vercel Insights and Analytics (runs on every page) */}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
